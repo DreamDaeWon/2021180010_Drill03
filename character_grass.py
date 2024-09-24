@@ -68,7 +68,8 @@ def run_triangle_bottom():
     pass
 
 def run_triangle_left_up():
-    print('left_up')
+    for a in range(50,300):
+        draw_boy(a, a)
     pass
 
 def run_triangle_right_down():
