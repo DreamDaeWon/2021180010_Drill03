@@ -40,7 +40,6 @@ def run_left():
     pass
 
 
-
 def run_rectangle():
     print('rectangle')
     run_top()
@@ -64,10 +63,15 @@ def run_circle():
     pass
 
 
+def run_triangle():
+    print('Triangle')
+    pass
+
+
 while True:
     #run_circle()
-    run_rectangle()
-
+    #run_rectangle()
+    run_triangle()
     break
 
 close_canvas()
