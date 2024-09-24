@@ -10,9 +10,15 @@ grass = load_image('grass.png')
 
 boy = load_image('character.png')
 
+def draw_boy(x,y):
+    clear_canvas_now()
+    boy.draw_now(x, y)
+    delay(0.01)
 
 def run_top():
-    print('Top')
+    for x in range(0,800,10):
+        draw_boy(x, 550)
+
     pass
 
 def run_right():
@@ -51,15 +57,14 @@ def run_circle():
     for d in range(0,360):
         x = cx + r * math.cos(math.radians(d))
         y = cy + r * math.sin(math.radians(d))
-        clear_canvas_now()
-        boy.draw_now(x, y)
-        delay(0.01)
+        draw_boy(x, y)
     pass
 
 
 while True:
+    run_circle()
     run_rectangle()
-    #run_circle()
+    
     break
 
 close_canvas()
