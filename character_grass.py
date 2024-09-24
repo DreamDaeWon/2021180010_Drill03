@@ -68,12 +68,17 @@ def run_triangle_bottom():
     pass
 
 def run_triangle_left_up():
-    for a in range(50,300):
-        draw_boy(a, a)
+    y = 50
+    for x in range(50,400,5):
+        if y<550: y +=5
+        else: pass
+        draw_boy(x,y)
+
+
     pass
 
 def run_triangle_right_down():
-    print('left_down')
+
     pass
 
 
