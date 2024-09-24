@@ -41,7 +41,7 @@ def run_left():
 
 
 def run_rectangle():
-    print('rectangle')
+
     run_top()
     run_right()
     run_bottom()
@@ -52,7 +52,7 @@ def run_rectangle():
 
 
 def run_circle():
-    print('Circle')
+
 
     r, cx, cy  = 300, 800//2, 600//2
 
@@ -63,8 +63,22 @@ def run_circle():
     pass
 
 
+def run_triangle_bottom():
+    run_bottom()
+    pass
+
+def run_triangle_left_up():
+    
+    pass
+
+def run_triangle_right_down():
+    pass
+
+
 def run_triangle():
-    print('Triangle')
+    run_triangle_bottom()
+    run_triangle_left_up()
+    run_triangle_right_down()
     pass
 
 
