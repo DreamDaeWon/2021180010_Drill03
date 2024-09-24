@@ -68,10 +68,11 @@ def run_triangle_bottom():
     pass
 
 def run_triangle_left_up():
-    
+    print('left_up')
     pass
 
 def run_triangle_right_down():
+    print('left_down')
     pass
 
 
