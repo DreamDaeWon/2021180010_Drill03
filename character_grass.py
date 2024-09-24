@@ -16,23 +16,24 @@ def draw_boy(x,y):
     delay(0.01)
 
 def run_top():
-    for x in range(0,800,10):
+    for x in range(0,750,10):
         draw_boy(x, 550)
 
     pass
 
 def run_right():
-    print('Right')
+    for y in range(550, 0, -10):
+        draw_boy(750, y)
 
     pass
 
 def run_bottom():
-    print('Bottom')
+
 
     pass
 
 def run_left():
-    print('Left')
+
 
     pass
 
@@ -62,9 +63,9 @@ def run_circle():
 
 
 while True:
-    run_circle()
+    #run_circle()
     run_rectangle()
-    
+
     break
 
 close_canvas()
